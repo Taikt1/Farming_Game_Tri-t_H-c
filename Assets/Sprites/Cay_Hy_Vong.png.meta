@@ -1,0 +1,353 @@
+fileFormatVersion: 2
+guid: 9361fc7a6f3bfe54d80a7d5e2d089faa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8649963884839852953
+    second: Cay_Hy_Vong_0
+  - first:
+      213: -7199017686511908169
+    second: Cay_Hy_Vong_1
+  - first:
+      213: 5546602459152204930
+    second: Cay_Hy_Vong_2
+  - first:
+      213: -4949872983686828658
+    second: Cay_Hy_Vong_3
+  - first:
+      213: -6376169130576915707
+    second: Cay_Hy_Vong_4
+  - first:
+      213: -2857295313488207589
+    second: Cay_Hy_Vong_5
+  - first:
+      213: -5849737447939140086
+    second: Cay_Hy_Vong_6
+  - first:
+      213: -2045109663082412371
+    second: Cay_Hy_Vong_7
+  - first:
+      213: -827829648264983640
+    second: Cay_Hy_Vong_8
+  - first:
+      213: 8899908027863550018
+    second: Cay_Hy_Vong_9
+  - first:
+      213: -7207702225403489914
+    second: Cay_Hy_Vong_10
+  - first:
+      213: -4080758982920148344
+    second: Cay_Hy_Vong_11
+  - first:
+      213: -2414319470118621711
+    second: Cay_Hy_Vong_12
+  - first:
+      213: 7450762469714833052
+    second: Cay_Hy_Vong_13
+  - first:
+      213: -3334274132699057702
+    second: Cay_Hy_Vong_14
+  - first:
+      213: 3841120484295634744
+    second: Cay_Hy_Vong_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cay_Hy_Vong_6
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 69
+        width: 166
+        height: 289
+      alignment: 9
+      pivot: {x: 0.4836117, y: 0.029323354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764a92c1da725f780800000000000000
+      internalID: -8649963884839852953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cay_Hy_Vong_7
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 69
+        width: 166
+        height: 292
+      alignment: 9
+      pivot: {x: 0.48907545, y: 0.031053595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2844318ac8d79fc40800000000000000
+      internalID: 5546602459152204930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cay_Hy_Vong_4
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 69
+        width: 161
+        height: 239
+      alignment: 9
+      pivot: {x: 0.5, y: 0.033301447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d2b043fb48e4bb0800000000000000
+      internalID: -4949872983686828658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cay_Hy_Vong_5
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 69
+        width: 175
+        height: 215
+      alignment: 9
+      pivot: {x: 0.48963553, y: 0.040254816}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503d62845fb4387a0800000000000000
+      internalID: -6376169130576915707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cay_Hy_Vong_2
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 68
+        width: 117
+        height: 110
+      alignment: 9
+      pivot: {x: 0.49224907, y: 0.079557106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6815808930919fb90800000000000000
+      internalID: -7207702225403489914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cay_Hy_Vong_3
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 68
+        width: 128
+        height: 148
+      alignment: 9
+      pivot: {x: 0.4858303, y: 0.052708857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a6f09635b3e57c0800000000000000
+      internalID: -4080758982920148344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cay_Hy_Vong_
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 62
+        width: 81
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd2549cb3d9e7ed0800000000000000
+      internalID: -2414319470118621711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cay_Hy_Vong_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 68
+        width: 75
+        height: 59
+      alignment: 9
+      pivot: {x: 0.51209104, y: 0.11574658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1f2b097574ab1d0800000000000000
+      internalID: -3334274132699057702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 720b4a2d3f8c52942b721d2d62f68d23
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cay_Hy_Vong_: -2414319470118621711
+      Cay_Hy_Vong_1: -3334274132699057702
+      Cay_Hy_Vong_13: 7450762469714833052
+      Cay_Hy_Vong_15: 3841120484295634744
+      Cay_Hy_Vong_2: -7207702225403489914
+      Cay_Hy_Vong_3: -4080758982920148344
+      Cay_Hy_Vong_4: -4949872983686828658
+      Cay_Hy_Vong_5: -6376169130576915707
+      Cay_Hy_Vong_6: -8649963884839852953
+      Cay_Hy_Vong_7: 5546602459152204930
+      Cay_Hy_Vong_8: -827829648264983640
+      Cay_Hy_Vong_9: 8899908027863550018
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fab6971753ee84640be5e8b18109bee9, type: 3}
+  m_Name: Slave
+  m_EditorClassIdentifier: 
+  plantName: CayNoLeTuBan
+  plantStages:
+  - {fileID: -3334274132699057702, guid: 9361fc7a6f3bfe54d80a7d5e2d089faa, type: 3}
+  - {fileID: -7207702225403489914, guid: 9361fc7a6f3bfe54d80a7d5e2d089faa, type: 3}
+  - {fileID: -4080758982920148344, guid: 9361fc7a6f3bfe54d80a7d5e2d089faa, type: 3}
+  - {fileID: -4720802879126236287, guid: 3c65e53fff0afc648aeb4f530e0114a8, type: 3}
+  - {fileID: 1347084265487622822, guid: 3c65e53fff0afc648aeb4f530e0114a8, type: 3}
+  - {fileID: -7926946416327163833, guid: 3c65e53fff0afc648aeb4f530e0114a8, type: 3}
+  timeBtwStages: 0
