@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -14,12 +14,17 @@ public class PlantItem : MonoBehaviour
 
     public Button btnSelect;
 
+    //public Image btnImage;
+    public TMP_Text btnTxt;
+
     FarmManager fm;
 
     // Start is called before the first frame update
     void Start()
     {
         fm = FindObjectOfType<FarmManager>();
+        plant = Instantiate(plant); // tạo bản sao runtime
+
         InitializeUI();
     }
 
@@ -32,7 +37,7 @@ public class PlantItem : MonoBehaviour
     void InitializeUI()
     {
         nameTxt.text = plant.plantName;
-        //priceTxt.text = "$" + plant.buyPrice;
+        volumeTxt.text = plant.amountSeeds.ToString();
         icon.sprite = plant.icon;
     }
 

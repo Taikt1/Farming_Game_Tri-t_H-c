@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -14,17 +14,29 @@ public class FarmManager : MonoBehaviour
     public Color buyColor = Color.green;
     public Color cancelColor = Color.red;
 
-    public bool isSelecting = false;
-    public int selectedTool = 0;
+
+
+    //public bool isSelecting = false;
+    //public int selectedTool = 0;
     // 1- water 2- Fertilizer 3- Buy plot
 
-    public Image[] buttonsImg;
-    public Sprite normalButton;
-    public Sprite selectedButton;
+    //public Image[] buttonsImg;
+    //public Sprite normalButton;
+    //public Sprite selectedButton;
+
+
+    public List<PlantRuntimeData> plantRuntimeDataList;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        plantRuntimeDataList = new List<PlantRuntimeData>();
+        foreach (var item in FindObjectsOfType<PlantItem>())
+        {
+            plantRuntimeDataList.Add(new PlantRuntimeData(item.plant));
+        }
+
         moneyTxt.text = "$" + money;
     }
 
@@ -32,58 +44,73 @@ public class FarmManager : MonoBehaviour
     {
         if (selectPlant == newPlant)
         {
-            CheckSelection();
+            Debug.Log("Cancelled Planting");
+
+            selectPlant.btnSelect.image.color = buyColor;
+            selectPlant.btnTxt.text = "Buy";
+            selectPlant = null;
+            isPlanting = false;
+            //CheckSelection();
 
         }
         else
         {
-            CheckSelection();
+            //CheckSelection();
+
+            if (selectPlant != null)
+            {
+                selectPlant.btnSelect.image.color = buyColor;
+                selectPlant.btnTxt.text = "Buy";
+            }
             selectPlant = newPlant;
-            //selectPlant.btnImage.color = cancelColor;
-            //selectPlant.btnTxt.text = "Cancel";
+            Debug.Log("Selected " + selectPlant.plant.plantName + " for planting");
+
+
+            selectPlant.btnSelect.image.color = cancelColor;
+            selectPlant.btnTxt.text = "Cancel";
             isPlanting = true;
         }
     }
 
-    public void SelectTool(int toolNumber)
-    {
-        if (toolNumber == selectedTool)
-        {
-            //deselect
-            CheckSelection();
-        }
-        else
-        {
-            //select tool number and check to see if anything was also selected
-            CheckSelection();
-            isSelecting = true;
-            selectedTool = toolNumber;
-            buttonsImg[toolNumber - 1].sprite = selectedButton;
-        }
-    }
+    //public void SelectTool(int toolNumber)
+    //{
+    //    if (toolNumber == selectedTool)
+    //    {
+    //        //deselect
+    //        CheckSelection();
+    //    }
+    //    else
+    //    {
+    //        //select tool number and check to see if anything was also selected
+    //        CheckSelection();
+    //        isSelecting = true;
+    //        selectedTool = toolNumber;
+    //        buttonsImg[toolNumber - 1].sprite = selectedButton;
+    //    }
+    //}
 
-    void CheckSelection()
-    {
-        if (isPlanting)
-        {
-            isPlanting = false;
-            if (selectPlant != null)
-            {
-                //selectPlant.btnImage.color = buyColor;
-                //selectPlant.btnTxt.text = "Buy";
-                selectPlant = null;
-            }
-        }
-        if (isSelecting)
-        {
-            if (selectedTool > 0)
-            {
-                buttonsImg[selectedTool - 1].sprite = normalButton;
-            }
-            isSelecting = false;
-            selectedTool = 0;
-        }
-    }
+    //void CheckSelection()
+    //{
+    //    if (isPlanting)
+    //    {
+    //        isPlanting = false;
+    //        if (selectPlant != null)
+    //        {
+    //            //selectPlant.btnImage.color = buyColor;
+    //            //selectPlant.btnTxt.text = "Buy";
+    //            selectPlant = null;
+    //        }
+    //    }
+    //    if (isSelecting)
+    //    {
+    //        if (selectedTool > 0)
+    //        {
+    //            buttonsImg[selectedTool - 1].sprite = normalButton;
+    //        }
+    //        isSelecting = false;
+    //        selectedTool = 0;
+    //    }
+    //}
 
     public void Transaction(int value)
     {
@@ -91,4 +118,25 @@ public class FarmManager : MonoBehaviour
         moneyTxt.text = "$" + money;
     }
 
+    public void Seeds(int value)
+    {
+        Debug.Log("Used " + value + " seeds of " + selectPlant.plant.plantName);
+        selectPlant.plant.amountSeeds -= value;  // giữ nguyên dòng này
+        selectPlant.volumeTxt.text = selectPlant.plant.amountSeeds.ToString();
+    }
+
+
+}
+
+[System.Serializable]
+public class PlantRuntimeData
+{
+    public PlantObject basePlant;
+    public int currentSeeds;
+
+    public PlantRuntimeData(PlantObject plant)
+    {
+        basePlant = plant;
+        currentSeeds = plant.amountSeeds; // khởi tạo từ ScriptableObject gốc
+    }
 }

@@ -4,7 +4,7 @@ using System.Threading;
 using UnityEngine;
 public class PlotManager : MonoBehaviour
 {
-    bool isPlanned = false;
+    bool isPlanted = false;
     SpriteRenderer plant;
     BoxCollider2D plantCollider;
 
@@ -12,18 +12,21 @@ public class PlotManager : MonoBehaviour
     float timeBtwStages = 2f;
     float timer;
 
-    public PlantObject selectedPlant;
+    PlantObject selectedPlant;
 
+
+    FarmManager fm;
 
     void Start()
     {
         plant = transform.GetChild(0).GetComponent<SpriteRenderer>();
         plantCollider = transform.GetChild(0).GetComponent<BoxCollider2D>();
+        fm = FindObjectOfType<FarmManager>();
     }
 
      void Update()
     {
-        if(isPlanned)
+        if(isPlanted)
         {
             timer -= Time.deltaTime;
             if (timer < 0 && plantStage < selectedPlant.plantStages.Length-1)
@@ -37,13 +40,19 @@ public class PlotManager : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (plantStage == selectedPlant.plantStages.Length-1)
+        if (isPlanted)
         {
-            Harvest();
+            if (plantStage == selectedPlant.plantStages.Length - 1 && !fm.isPlanting)
+            {
+                Debug.Log("Ready to harvest");
+                Harvest();
+            }
         }
-        else
+      
+        else if (fm.isPlanting && fm.selectPlant.plant.amountSeeds > 0)
         {
-            Plant();
+            Debug.Log("Ready to plant");
+            Plant(fm.selectPlant.plant);
         }
 
         Debug.Log("Plot clicked");
@@ -53,14 +62,19 @@ public class PlotManager : MonoBehaviour
     void Harvest()
     {
         Debug.Log("Harvesting");
-        isPlanned = false;
+        isPlanted = false;
         plant.gameObject.SetActive(false);
+        fm.Transaction(selectedPlant.sellPrice);
     }
 
-    void Plant()
+    void Plant(PlantObject plantObject)
     {
+        selectedPlant = plantObject;
         Debug.Log("Planting");
-        isPlanned = true;
+        isPlanted = true;
+
+        fm.Seeds(1);
+
         plantStage = 0;
         UpdatePlant();
         timer = selectedPlant.timeBtwStages;

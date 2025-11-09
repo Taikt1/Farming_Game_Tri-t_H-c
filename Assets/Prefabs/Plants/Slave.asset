@@ -10,18 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fab6971753ee84640be5e8b18109bee9, type: 3}
-  m_Name: Hope
+  m_Name: Slave
   m_EditorClassIdentifier: 
-  plantName: HopeTree
+  plantName: CayNoLeTuBan
   plantStages:
   - {fileID: -3334274132699057702, guid: 9361fc7a6f3bfe54d80a7d5e2d089faa, type: 3}
   - {fileID: -7207702225403489914, guid: 9361fc7a6f3bfe54d80a7d5e2d089faa, type: 3}
   - {fileID: -4080758982920148344, guid: 9361fc7a6f3bfe54d80a7d5e2d089faa, type: 3}
-  - {fileID: -4949872983686828658, guid: 9361fc7a6f3bfe54d80a7d5e2d089faa, type: 3}
-  - {fileID: -8649963884839852953, guid: 9361fc7a6f3bfe54d80a7d5e2d089faa, type: 3}
-  - {fileID: 5546602459152204930, guid: 9361fc7a6f3bfe54d80a7d5e2d089faa, type: 3}
-  timeBtwStages: 5
-  buyPrice: 10
-  sellPrice: 100
+  - {fileID: -4720802879126236287, guid: 3c65e53fff0afc648aeb4f530e0114a8, type: 3}
+  - {fileID: 1347084265487622822, guid: 3c65e53fff0afc648aeb4f530e0114a8, type: 3}
+  - {fileID: -7926946416327163833, guid: 3c65e53fff0afc648aeb4f530e0114a8, type: 3}
+  timeBtwStages: 3
+  amountSeeds: 1
+  sellPrice: 500
   icon: {fileID: -2414319470118621711, guid: 9361fc7a6f3bfe54d80a7d5e2d089faa, type: 3}
-  dryPlanted: {fileID: 0}

@@ -20,3 +20,6 @@ MonoBehaviour:
   - {fileID: -7128798585168329427, guid: 06564c96ad046d944b2a111728d4038d, type: 3}
   - {fileID: -7881471519954088896, guid: 06564c96ad046d944b2a111728d4038d, type: 3}
   timeBtwStages: 5
+  amountSeeds: 1
+  sellPrice: 200
+  icon: {fileID: -2414319470118621711, guid: 9361fc7a6f3bfe54d80a7d5e2d089faa, type: 3}
